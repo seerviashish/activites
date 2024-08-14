@@ -1,0 +1,6 @@
+{
+  "name": "@databases/mysql8",
+  "version": "0.0.0",
+  "description": "MySQL 8 database with docker container",
+  "license": "MIT"
+}

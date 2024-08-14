@@ -1,0 +1,5 @@
+# streamed data
+data/logs/**
+
+# env
+.env
