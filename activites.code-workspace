@@ -1,0 +1,44 @@
+{
+  "folders": [
+    { "name": "Root", "path": "./" },
+    { "name": "packages:activity1", "path": "./packages/activity1" }
+  ],
+  "settings": {
+    "editor.colorDecorators": true,
+    "colorize.languages": [
+      "javascriptreact",
+      "javascript",
+      "css",
+      "scss",
+      "typescript",
+      "typescriptreact"
+    ],
+    "files.exclude": {
+      "**/node_modules": false,
+      "services": true,
+      "packages": true,
+      "apps": true,
+      "databases": true,
+      "libs": true,
+      "ux": true,
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+    },
+    "files.associations": {
+      "**/apps/web/**/*.css": "tailwindcss"
+    },
+    "cSpell.words": [
+      "Docgen",
+      "infile",
+      "innodb",
+      "mkver",
+      "mysqld",
+      "nestjs",
+      "postgis"
+    ]
+  }
+}

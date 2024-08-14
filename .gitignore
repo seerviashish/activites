@@ -1,0 +1,29 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+node_modules
+
+# misc
+.DS_Store
+*.pem
+*.pid
+
+# Logs
+logs
+*.log
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# version.ts
+/src/version.ts
+
+# yalc files
+**/.yalc
+**/yalc.lock
+node_modules
