@@ -25,6 +25,7 @@ Added code change to trace logs in jaegtracing
 
 Its very complicated tools 😅😭 Will look something for cloud watch aws logger.
 
+ref: https://www.tomray.dev/nestjs-open-telemetry
 
 ----
 Checked pinno logger
