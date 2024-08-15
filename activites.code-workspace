@@ -1,7 +1,23 @@
 {
   "folders": [
     { "name": "Root", "path": "./" },
-    { "name": "packages:activity1", "path": "./packages/activity1" }
+    { "name": "learnings", "path": "packages/learnings" },
+    {
+      "name": "packages:activity1:task1",
+      "path": "./packages/activity1/clean-architecture-nestJS"
+    },
+    {
+      "name": "packages:activity1:task2",
+      "path": "./packages/activity1/nestjs-rest-cqrs-example"
+    },
+    {
+      "name": "packages:activity2:task1",
+      "path": "./packages/activity2/nestjs-requests-log-middleware"
+    },
+    {
+      "name": "packages:activity2:task2",
+      "path": "./packages/activity2/nestjs-zipkin"
+    }
   ],
   "settings": {
     "editor.colorDecorators": true,

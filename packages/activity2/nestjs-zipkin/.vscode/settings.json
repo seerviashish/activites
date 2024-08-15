@@ -1,0 +1,53 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "always"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "apollographql",
+    "Autoclose",
+    "Autostale",
+    "codegen",
+    "GISDB",
+    "hstore",
+    "informations",
+    "INITDB",
+    "inversify",
+    "Keyv",
+    "keyvadapter",
+    "maxlength",
+    "mkver",
+    "ONBOARDED",
+    "opentelemetry",
+    "postgis",
+    "prio",
+    "PSQL",
+    "Redirections",
+    "resave",
+    "socketio",
+    "tailwindcss",
+    "TOTP",
+    "umzug",
+    "zkacqua"
+  ],
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "jest.enable": false,
+  "jest.runMode": {
+    "runAllTestsOnStartup": true,
+    "showInlineError": true,
+    "type": "on-save",
+    "coverage": true,
+    "testFileOnly": true
+  },
+  "jest.debugMode": true,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
+}
