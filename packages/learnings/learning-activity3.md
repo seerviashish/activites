@@ -100,3 +100,28 @@ Here are the tables analyzing the latency and requests per second data for the t
 
 
 Blocking requests are decreasing req/sec better to use non-blocking request via interceptor.
+
+#### Test Summary:
+
+| Endpoint                     | Connections | Requests/Sec | Avg Latency | Max Latency | Requests | Data Read |
+|------------------------------|-------------|--------------|-------------|-------------|----------|-----------|
+| **Blocking 5ms**             | 10          | 1,464        | 6.32 ms     | 17 ms       | 88,000   | 21 MB     |
+| **Blocking 25ms**            | 10          | 352          | 27.91 ms    | 36 ms       | 21,000   | 5.05 MB   |
+| **Non-blocking 5ms**         | 10          | 15,473       | 0.08 ms     | 14 ms       | 928,000  | 222 MB    |
+| **Non-blocking 25ms**        | 10          | 15,327       | 0.09 ms     | 14 ms       | 920,000  | 220 MB    |
+| **Redis Blocking**           | 10          | 13,141       | 0.08 ms     | 18 ms       | 788,000  | 188 MB    |
+| **Redis Non-blocking**       | 10          | 11,670       | 0.12 ms     | 16 ms       | 700,000  | 167 MB    |
+
+### Analysis:
+
+1. **Blocking vs Non-blocking:**
+   - The non-blocking endpoints significantly outperform the blocking ones in terms of requests per second.
+   - Non-blocking 5ms and 25ms both handle nearly 15,000 requests per second, compared to 1,464 and 352 requests per second for the corresponding blocking endpoints.
+   - The average latency for non-blocking endpoints is also significantly lower, indicating more efficient handling of requests.
+
+2. **Redis Performance:**
+   - The Redis-based endpoints, both blocking and non-blocking, show a higher throughput compared to the general blocking endpoints.
+   - The Redis non-blocking endpoint has a slightly lower request rate than the blocking one but with marginally higher latency.
+
+3. **Overall Throughput:**
+   - The non-blocking 5ms endpoint achieves the highest throughput, handling 928,000 requests in 60 seconds and reading 222 MB of data.

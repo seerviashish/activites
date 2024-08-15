@@ -28,4 +28,4 @@ Its very complicated tools 😅😭 Will look something for cloud watch aws logg
 ref: https://www.tomray.dev/nestjs-open-telemetry
 
 ----
-Checked pinno logger
+Checked pinno logger.
